@@ -33,12 +33,10 @@ L1正則化とL2正則化の両方が，学習データのオーバーフィッ�
 L2正則化は，リッジ回帰とも呼ばれ，2乗残差の合計にラムダ，傾きの2乗を加えたものを最小化する．この追加項は，リッジ回帰ペナルティと呼ばれます．これはモデルのバイアスを増加させ、訓練データでの適合を悪くしますが，分散も減少させます．
 リッジ回帰のペナルティを傾きの絶対値に置き換えると，LASSO回帰またはL1正則化が得られる．
 
-$$
-\text { Lasso: Loss }=\operatorname{Error}(y, \hat{y})+\lambda \sum_{i=1}^{N}\left|w_{i}\right|
-$$
-$$
-\text { Lidge: Loss}=\operatorname{Error}(y, \hat{y})+\lambda \sum_{i=1}^{N} w_{i}^{2}
-$$
+![\text { Lasso: Loss }=\operatorname{Error}(y, \hat{y})+\lambda \sum_{i=1}^{N}\left|w_{i}\right|](https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle+%5Ctext+%7B+Lasso%3A+Loss+%7D%3D%5Coperatorname%7BError%7D%28y%2C+%5Chat%7By%7D%29%2B%5Clambda+%5Csum_%7Bi%3D1%7D%5E%7BN%7D%5Cleft%7Cw_%7Bi%7D%5Cright%7C)
+
+![\text { Lidge: Loss}=\operatorname{Error}(y, \hat{y})+\lambda \sum_{i=1}^{N} w_{i}^{2}](https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle+%5Ctext+%7B+Lidge%3A+Loss%7D%3D%5Coperatorname%7BError%7D%28y%2C+%5Chat%7By%7D%29%2B%5Clambda+%5Csum_%7Bi%3D1%7D%5E%7BN%7D+w_%7Bi%7D%5E%7B2%7D)
+
 
 ### Q5: K最近傍法はどのように機能する？
 ![0_o4CAE39VRKzAk3NV.png](:storage/3fdf0be8-689a-43d3-a9de-d7d3fec6b450/2869d20a.png)
@@ -212,13 +210,13 @@ PCAは，圧縮の目的で必要なメモリを削減しアルゴリズムを�
 ### Q:34 presicionとrecallの違いは何か
 
 recall: 実際の陽性の何パーセントが正しく識別されたのか
-$$
-\text { Recall }=\frac{T P}{T P+F N}
-$$
+
+![\text { Recall }=\frac{T P}{T P+F N}](https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle+%5Ctext+%7B+Recall+%7D%3D%5Cfrac%7BT+P%7D%7BT+P%2BF+N%7D)
+
 presicion: 正の識別のどの割合が実際に正しかったか
-$$
-\text { Precision }=\frac{T P}{T P+F P}
-$$
+
+![\text { Precision }=\frac{T P}{T P+F P}
+](https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle+%5Ctext+%7B+Precision+%7D%3D%5Cfrac%7BT+P%7D%7BT+P%2BF+P%7D%0A)
 
 ### Q:35 平均二乗誤差がモデルのパフォーマンスの悪い尺度であるのはなぜか？代わりは？
 
