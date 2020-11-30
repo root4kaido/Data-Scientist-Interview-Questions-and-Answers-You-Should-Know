@@ -39,14 +39,17 @@ L2正則化は，リッジ回帰とも呼ばれ，2乗残差の合計にラム�
 
 
 ### Q5: K最近傍法はどのように機能する？
-![0_o4CAE39VRKzAk3NV.png](:storage/3fdf0be8-689a-43d3-a9de-d7d3fec6b450/2869d20a.png)
+
+<img src="https://github.com/root4kaido/Data-Scientist-Interview-Questions-and-Answers-You-Should-Know/blob/main/MachineLearning/label.png">
+
 K-Nearest Neighborsは，分類された点のうち最も近い点を見て新しいサンプルを分類する分類手法で，「K-nearest」と呼ばれる．上の例では，k=1の場合，未分類の点は青い点として分類される．
 kの値が低すぎると，外れ値の影響を受ける可能性がある．しかし，高すぎると，わずかな標本数のクラスを見落とすことがある．
 
 ### Q6. k平均法において，kを選択するにはどうすればよい？
 
 kの最適値を決定するために使用される一般的な方法であるエルボー法を使用できる．グラフにkの各値の二乗誤差をプロットし，（x軸にkの値，y軸に二乗誤差）歪みが最も減少するポイントがエルボーポイントになる。
-![1_j5T-Wt5bjBfq1XEglL4n-Q.png](:storage/3fdf0be8-689a-43d3-a9de-d7d3fec6b450/b83ee7b7.png)
+
+<img src="https://github.com/root4kaido/Data-Scientist-Interview-Questions-and-Answers-You-Should-Know/blob/main/MachineLearning/elbow.png">
 
 ただし，現実のデータではうまく行かないことも多い．
 シルエット分析というのもある．
@@ -59,7 +62,8 @@ kの最適値を決定するために使用される一般的な方法である�
 
 ### Q8: SVMのサポートベクターとは？
 サポートベクターは，最大マージンの境界にあたるデータ点．
-![1_ZJajse9UxH0Te_Mz5g1fqQ.png](:storage/3fdf0be8-689a-43d3-a9de-d7d3fec6b450/058e95b1.png)
+
+<img src="https://github.com/root4kaido/Data-Scientist-Interview-Questions-and-Answers-You-Should-Know/blob/main/MachineLearning/SVM.png">
 
 ### Q9: 決定木におけるプルーニングとは？
 プルーニングは，インスタンスを分類する能力をほとんどまたはまったく提供しないツリーのセクションまたはブランチを削除することにより，決定木のサイズを縮小する機械学習および検索アルゴリズムの手法．
@@ -67,7 +71,8 @@ kの最適値を決定するために使用される一般的な方法である�
 ### Q10: ランダムフォレストとはなにか？なぜナイーブベイズのほうが良いのか？
 ランダムフォレストは，決定木から構築されるアンサンブル学習手法．ランダム・フォレストでは，元のデータのブートストラップされたデータセットを使用して複数の決定木を作成，決定木の各ステップで変数のサブセットをランダムに選択する．次にモデルは，各決定木のすべての予測のモードを選択します，多数決モデルに依存することで，個々の木からの誤差のリスクを低減する．
 
-![0_2jmC3sVOd9uZnHu7.png](:storage/3fdf0be8-689a-43d3-a9de-d7d3fec6b450/39097862.png)
+<img src="https://github.com/root4kaido/Data-Scientist-Interview-Questions-and-Answers-You-Should-Know/blob/main/MachineLearning/tree.png">
+
 例えば，1，3つ目の決定木を使用した場合0を予測しするが，4つの決定木すべてのモードに頼った場合，予測値は1になります，これがランダムフォレストの力．
 ランダムフォレストは，性能が高い，非線形境界をモデル化できる，クロスバリデーションが不要，特徴の重要性を取得できる，他にもいくつかの利点がある．
 訓練しやすく，プロセスや結果を理解しやすいという意味では，ナイーブベイズの方が優れている．ランダムフォレストはブラックボックスのように見えることがあるため，実装や理解の面ではNaive Bayesアルゴリズムの方が良いかもしれない．しかし，性能の面では，アンサンブル手法であるため，ランダムフォレストの方が一般的には強い．
@@ -92,7 +97,8 @@ GradientBoostは，複数の木を構築するという意味ではAdaBoostと�
 ### Q14: バイアス-分散のトレードオフとは？
 推定量のバイアスは，期待値と真の値との差．バイアスが高いモデルは単純化されすぎて，結果としてアンダーフィッティングになる傾向がある．分散は，データとノイズに対するモデルの感度を表す．高い分散を持つモデルは，オーバーフィッティングになる．
 したがって，バイアスと分散のトレードオフは，機械学習モデルの特性であり，分散が低いほどバイアスが高くなり，その逆もまた然り．一般的に，誤差が最小になるような，この2つの最適なバランスを見つけることができる．
-![0_M54ORShzS5xVCFSl.png](:storage/3fdf0be8-689a-43d3-a9de-d7d3fec6b450/adb34d25.png)
+
+<img src="https://github.com/root4kaido/Data-Scientist-Interview-Questions-and-Answers-You-Should-Know/blob/main/MachineLearning/loss.png">
 
 ### Q15: ブートストラップサンプリング法とは？また，それが使用される場合の例を述べよ．
 技術的に言えば，ブートストラップ・サンプリング法は，近似分布を用いたランダム・サンプリングを用いたリサンプリング法．
@@ -100,9 +106,13 @@ GradientBoostは，複数の木を構築するという意味ではAdaBoostと�
 
 ### Q16: バギングとブースティングの違いは？
 バギングは，ブートストラップ集計とも呼ばれ，同じ学習アルゴリズムの複数のモデルが元のデータセットのブートストラップされたサンプルで学習されるプロセス．その後，ランダムフォレストのように，すべてのモデルの出力に対して投票が行われる．
-![0_FtCQQB5C5uGoHCHQ.png](:storage/3fdf0be8-689a-43d3-a9de-d7d3fec6b450/f5700d1a.png)
+
+<img src="https://github.com/root4kaido/Data-Scientist-Interview-Questions-and-Answers-You-Should-Know/blob/main/MachineLearning/bagging.png">
+
 ブースティングは，個々のモデルが順番に構築され，前のモデルを反復するバギングのバリエーション．具体的には，前のモデルによって誤って分類されたデータポイントは，次のモデルで強調されます．これは，モデルの全体的な精度を向上させるために行われる．
-![0_gFDqgDCpUVetPl5p.png](:storage/3fdf0be8-689a-43d3-a9de-d7d3fec6b450/9e63161a.png)
+
+<img src="https://github.com/root4kaido/Data-Scientist-Interview-Questions-and-Answers-You-Should-Know/blob/main/MachineLearning/boost.png">
+
 1つ目のモデルが構築されると，2つ目のモデルを訓練するために，2つ目のブートストラップ標本に加えて，誤って分類された/予測された点が取られる．その後，アンサンブルモデル（モデル1と2）をテストデータセットに対して使用し，プロセスを続ける．
 
 ### Q17: XGBoostはバイアスと分散のトレードオフをどのように処理するか？
@@ -136,7 +146,7 @@ B) Cross-Validation
 ### Q:23 混同行列とは何か？
 混同行列（エラー行列としても知られる）は，分類モデルの性能を評価するために使用される要約表．予測の正解数と不正解数をカウント値でまとめ，各クラスごとに分解している．
 
-![0_6l26_xWh8zG4gue4.png](:storage/3fdf0be8-689a-43d3-a9de-d7d3fec6b450/1acc3cd0.png)
+<img src="https://github.com/root4kaido/Data-Scientist-Interview-Questions-and-Answers-You-Should-Know/blob/main/MachineLearning/matrix.png">
 
 ### Q:23 教師あり学習と教師なし学習とは何？
 教師あり学習では，対象変数が既知のラベル付きデータセットで学習する．
@@ -243,11 +253,11 @@ presicion: 正の識別のどの割合が実際に正しかったか
 
 ニューラルネットワークは，本質的には数学的な方程式のネットワーク．それは，1つまたは複数の入力変数を取り，方程式のネットワークを通過することで，1つまたは複数の出力変数になる．
 
-![0_8nq9-h-5C4eUzjlE.png](:storage/3fdf0be8-689a-43d3-a9de-d7d3fec6b450/311b680d.png)
+<img src="https://github.com/root4kaido/Data-Scientist-Interview-Questions-and-Answers-You-Should-Know/blob/main/MachineLearning/net.png">
 
 ニューラルネットワークには，入力層，1つ以上の隠れ層，出力層がある．入力層は，x1, x2, ..., xnで表される1つ以上の特徴変数（または入力変数または独立変数）で構成される．隠れ層は，１つ以上の隠れノードまたは隠れ単位からなる．ノードとは，上図の円の一つである．同様に出力変数は，1つまたは複数の出力単位から構成される．
 
-![0_wzjAxv0Vwvj8ZBVd.png](:storage/3fdf0be8-689a-43d3-a9de-d7d3fec6b450/ba94aba0.png)
+<img src="https://github.com/root4kaido/Data-Scientist-Interview-Questions-and-Answers-You-Should-Know/blob/main/MachineLearning/net2.png">
 
 冒頭で述べたように，ニューラルネットワークは方程式のネットワークに過ぎない．ニューラルネットワークの各ノードは，線形関数と活性化関数の2つの関数で構成されている．
 
